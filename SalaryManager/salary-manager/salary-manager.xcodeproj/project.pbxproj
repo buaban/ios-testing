@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F904D5C91DAD35C5003D1FA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F904D5C81DAD35C5003D1FA1 /* AppDelegate.swift */; };
+		F904D5D01DAD35C5003D1FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F904D5CE1DAD35C5003D1FA1 /* Main.storyboard */; };
+		F904D5D21DAD35C5003D1FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F904D5D11DAD35C5003D1FA1 /* Assets.xcassets */; };
+		F904D5D51DAD35C5003D1FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F904D5D31DAD35C5003D1FA1 /* LaunchScreen.storyboard */; };
+		F904D5E01DAD35C5003D1FA1 /* salary_managerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F904D5DF1DAD35C5003D1FA1 /* salary_managerTests.swift */; };
+		F904D5EB1DAD35C6003D1FA1 /* salary_managerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F904D5EA1DAD35C6003D1FA1 /* salary_managerUITests.swift */; };
+		F95666A31E0279C300C94CC5 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95666A21E0279C300C94CC5 /* TransactionsViewController.swift */; };
+		F966EF5D1DAFC269005876F4 /* GRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F904D6711DAE3CB3003D1FA1 /* GRDB.framework */; };
+		F966EF5E1DAFC269005876F4 /* GRDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F904D6711DAE3CB3003D1FA1 /* GRDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F966EF661DB0BFB1005876F4 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F966EF641DB0BFB1005876F4 /* TransactionCell.swift */; };
+		F966EF671DB0BFB1005876F4 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F966EF651DB0BFB1005876F4 /* TransactionCell.xib */; };
+		F966EF691DB0C32C005876F4 /* salary-manager-data.db in Resources */ = {isa = PBXBuildFile; fileRef = F966EF681DB0C32C005876F4 /* salary-manager-data.db */; };
+		F9A439A21DFFED95009BEC99 /* TransactionCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A439A11DFFED95009BEC99 /* TransactionCellProtocol.swift */; };
+		F9A439A41E00F94D009BEC99 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A439A31E00F94D009BEC99 /* TransactionDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F904D5DC1DAD35C5003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D5BD1DAD35C5003D1FA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F904D5C41DAD35C5003D1FA1;
+			remoteInfo = "salary-manager";
+		};
+		F904D5E71DAD35C5003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D5BD1DAD35C5003D1FA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F904D5C41DAD35C5003D1FA1;
+			remoteInfo = "salary-manager";
+		};
+		F904D65E1DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773F319C8CBB3004FCF85;
+			remoteInfo = GRDBOSX;
+		};
+		F904D6601DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56E5D7F91B4D422D00430942;
+			remoteInfo = GRDBOSXTests;
+		};
+		F904D6621DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 560C981A1C0E22D300BF8471;
+			remoteInfo = GRDBOSXPerformanceTests;
+		};
+		F904D6641DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56553C181C3E906C00522B5C;
+			remoteInfo = GRDBOSXCrashTests;
+		};
+		F904D6661DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 560FC54D1CB003810014AA8E;
+			remoteInfo = GRDBCipherOSX;
+		};
+		F904D6681DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 560FC5B01CB00B880014AA8E;
+			remoteInfo = GRDBCipherOSXTests;
+		};
+		F904D66A1DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5671566C1CB16729007DC145;
+			remoteInfo = GRDBCipherOSXEncryptedTests;
+		};
+		F904D66C1DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3BA805A1CFB2BB2003DC1BA;
+			remoteInfo = GRDBCustomSQLiteOSX;
+		};
+		F904D66E1DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3BA809B1CFB2F6F003DC1BA;
+			remoteInfo = GRDBCustomSQLiteOSXTests;
+		};
+		F904D6701DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56E5D7CA1B4D3FED00430942;
+			remoteInfo = GRDBiOS;
+		};
+		F904D6721DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56E5D7D31B4D3FEE00430942;
+			remoteInfo = GRDBiOSTests;
+		};
+		F904D6741DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56AFCA231CB1A8BB00F48B96;
+			remoteInfo = GRDBCipheriOS;
+		};
+		F904D6761DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56AFCA7F1CB1AA9900F48B96;
+			remoteInfo = GRDBCipheriOSTests;
+		};
+		F904D6781DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56AFCAD71CB1ABC800F48B96;
+			remoteInfo = GRDBCipheriOSEncryptedTests;
+		};
+		F904D67A1DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3BA7FFE1CFB25E4003DC1BA;
+			remoteInfo = GRDBCustomSQLiteiOS;
+		};
+		F904D67C1DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3BA80411CFB2AD7003DC1BA;
+			remoteInfo = GRDBCustomSQLiteiOSTests;
+		};
+		F904D67E1DAE3CB3003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 565490A01D5A4798005622CB;
+			remoteInfo = GRDBWatchOS;
+		};
+		F904D6881DAE3CDC003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3773F219C8CBB3004FCF85;
+			remoteInfo = GRDBOSX;
+		};
+		F904D68C1DAE3CDC003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 56E5D7C91B4D3FED00430942;
+			remoteInfo = GRDBiOS;
+		};
+		F904D6901DAE3CDC003D1FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5654909F1D5A4798005622CB;
+			remoteInfo = GRDBWatchOS;
+		};
+		F966EF5F1DAFC269005876F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 56E5D7C91B4D3FED00430942;
+			remoteInfo = GRDBiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F966EF611DAFC269005876F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F966EF5E1DAFC269005876F4 /* GRDB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F904D5C51DAD35C5003D1FA1 /* salary-manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "salary-manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F904D5C81DAD35C5003D1FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F904D5CF1DAD35C5003D1FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F904D5D11DAD35C5003D1FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F904D5D41DAD35C5003D1FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F904D5D61DAD35C5003D1FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F904D5DB1DAD35C5003D1FA1 /* salary-managerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "salary-managerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F904D5DF1DAD35C5003D1FA1 /* salary_managerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salary_managerTests.swift; sourceTree = "<group>"; };
+		F904D5E11DAD35C5003D1FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F904D5E61DAD35C5003D1FA1 /* salary-managerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "salary-managerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F904D5EA1DAD35C6003D1FA1 /* salary_managerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = salary_managerUITests.swift; sourceTree = "<group>"; };
+		F904D5EC1DAD35C6003D1FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F904D5F91DAE2E93003D1FA1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GRDB.xcodeproj; path = "../../GRDB.swift-master/GRDB.xcodeproj"; sourceTree = "<group>"; };
+		F95666A21E0279C300C94CC5 /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		F966EF641DB0BFB1005876F4 /* TransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		F966EF651DB0BFB1005876F4 /* TransactionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		F966EF681DB0C32C005876F4 /* salary-manager-data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "salary-manager-data.db"; sourceTree = "<group>"; };
+		F9A439A11DFFED95009BEC99 /* TransactionCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCellProtocol.swift; sourceTree = "<group>"; };
+		F9A439A31E00F94D009BEC99 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F904D5C21DAD35C5003D1FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F966EF5D1DAFC269005876F4 /* GRDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F904D5D81DAD35C5003D1FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F904D5E31DAD35C5003D1FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F904D5BC1DAD35C5003D1FA1 = {
+			isa = PBXGroup;
+			children = (
+				F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */,
+				F904D5C71DAD35C5003D1FA1 /* salary-manager */,
+				F904D5DE1DAD35C5003D1FA1 /* salary-managerTests */,
+				F904D5E91DAD35C5003D1FA1 /* salary-managerUITests */,
+				F904D5C61DAD35C5003D1FA1 /* Products */,
+				F904D5F81DAE2E93003D1FA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F904D5C61DAD35C5003D1FA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F904D5C51DAD35C5003D1FA1 /* salary-manager.app */,
+				F904D5DB1DAD35C5003D1FA1 /* salary-managerTests.xctest */,
+				F904D5E61DAD35C5003D1FA1 /* salary-managerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F904D5C71DAD35C5003D1FA1 /* salary-manager */ = {
+			isa = PBXGroup;
+			children = (
+				F966EF681DB0C32C005876F4 /* salary-manager-data.db */,
+				F904D5C81DAD35C5003D1FA1 /* AppDelegate.swift */,
+				F904D5CE1DAD35C5003D1FA1 /* Main.storyboard */,
+				F904D5D11DAD35C5003D1FA1 /* Assets.xcassets */,
+				F904D5D31DAD35C5003D1FA1 /* LaunchScreen.storyboard */,
+				F904D5D61DAD35C5003D1FA1 /* Info.plist */,
+				F966EF641DB0BFB1005876F4 /* TransactionCell.swift */,
+				F966EF651DB0BFB1005876F4 /* TransactionCell.xib */,
+				F9A439A11DFFED95009BEC99 /* TransactionCellProtocol.swift */,
+				F9A439A31E00F94D009BEC99 /* TransactionDetailsViewController.swift */,
+				F95666A21E0279C300C94CC5 /* TransactionsViewController.swift */,
+			);
+			path = "salary-manager";
+			sourceTree = "<group>";
+		};
+		F904D5DE1DAD35C5003D1FA1 /* salary-managerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F904D5DF1DAD35C5003D1FA1 /* salary_managerTests.swift */,
+				F904D5E11DAD35C5003D1FA1 /* Info.plist */,
+			);
+			path = "salary-managerTests";
+			sourceTree = "<group>";
+		};
+		F904D5E91DAD35C5003D1FA1 /* salary-managerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F904D5EA1DAD35C6003D1FA1 /* salary_managerUITests.swift */,
+				F904D5EC1DAD35C6003D1FA1 /* Info.plist */,
+			);
+			path = "salary-managerUITests";
+			sourceTree = "<group>";
+		};
+		F904D5F81DAE2E93003D1FA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F904D5F91DAE2E93003D1FA1 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F904D6481DAE3CB2003D1FA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F904D65F1DAE3CB3003D1FA1 /* GRDB.framework */,
+				F904D6611DAE3CB3003D1FA1 /* GRDBTests.xctest */,
+				F904D6631DAE3CB3003D1FA1 /* GRDBOSXPerformanceTests.xctest */,
+				F904D6651DAE3CB3003D1FA1 /* GRDBOSXCrashTests.xctest */,
+				F904D6671DAE3CB3003D1FA1 /* GRDBCipher.framework */,
+				F904D6691DAE3CB3003D1FA1 /* GRDBTests.xctest */,
+				F904D66B1DAE3CB3003D1FA1 /* GRDBCipherOSXEncryptedTests.xctest */,
+				F904D66D1DAE3CB3003D1FA1 /* GRDBCustomSQLite.framework */,
+				F904D66F1DAE3CB3003D1FA1 /* GRDBCustomSQLiteOSXTests.xctest */,
+				F904D6711DAE3CB3003D1FA1 /* GRDB.framework */,
+				F904D6731DAE3CB3003D1FA1 /* GRDBTests.xctest */,
+				F904D6751DAE3CB3003D1FA1 /* GRDBCipher.framework */,
+				F904D6771DAE3CB3003D1FA1 /* GRDBTests.xctest */,
+				F904D6791DAE3CB3003D1FA1 /* GRDBTests.xctest */,
+				F904D67B1DAE3CB3003D1FA1 /* GRDBCustomSQLite.framework */,
+				F904D67D1DAE3CB3003D1FA1 /* GRDBCustomSQLiteiOSTests.xctest */,
+				F904D67F1DAE3CB3003D1FA1 /* GRDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F904D5C41DAD35C5003D1FA1 /* salary-manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F904D5EF1DAD35C6003D1FA1 /* Build configuration list for PBXNativeTarget "salary-manager" */;
+			buildPhases = (
+				F904D5C11DAD35C5003D1FA1 /* Sources */,
+				F904D5C21DAD35C5003D1FA1 /* Frameworks */,
+				F904D5C31DAD35C5003D1FA1 /* Resources */,
+				F966EF611DAFC269005876F4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F904D6891DAE3CDC003D1FA1 /* PBXTargetDependency */,
+				F904D68D1DAE3CDC003D1FA1 /* PBXTargetDependency */,
+				F904D6911DAE3CDC003D1FA1 /* PBXTargetDependency */,
+				F966EF601DAFC269005876F4 /* PBXTargetDependency */,
+			);
+			name = "salary-manager";
+			productName = "salary-manager";
+			productReference = F904D5C51DAD35C5003D1FA1 /* salary-manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F904D5DA1DAD35C5003D1FA1 /* salary-managerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F904D5F21DAD35C6003D1FA1 /* Build configuration list for PBXNativeTarget "salary-managerTests" */;
+			buildPhases = (
+				F904D5D71DAD35C5003D1FA1 /* Sources */,
+				F904D5D81DAD35C5003D1FA1 /* Frameworks */,
+				F904D5D91DAD35C5003D1FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F904D5DD1DAD35C5003D1FA1 /* PBXTargetDependency */,
+			);
+			name = "salary-managerTests";
+			productName = "salary-managerTests";
+			productReference = F904D5DB1DAD35C5003D1FA1 /* salary-managerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F904D5E51DAD35C5003D1FA1 /* salary-managerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F904D5F51DAD35C6003D1FA1 /* Build configuration list for PBXNativeTarget "salary-managerUITests" */;
+			buildPhases = (
+				F904D5E21DAD35C5003D1FA1 /* Sources */,
+				F904D5E31DAD35C5003D1FA1 /* Frameworks */,
+				F904D5E41DAD35C5003D1FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F904D5E81DAD35C5003D1FA1 /* PBXTargetDependency */,
+			);
+			name = "salary-managerUITests";
+			productName = "salary-managerUITests";
+			productReference = F904D5E61DAD35C5003D1FA1 /* salary-managerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F904D5BD1DAD35C5003D1FA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Buataitom;
+				TargetAttributes = {
+					F904D5C41DAD35C5003D1FA1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MS8B32ZSAC;
+						ProvisioningStyle = Automatic;
+					};
+					F904D5DA1DAD35C5003D1FA1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F904D5C41DAD35C5003D1FA1;
+					};
+					F904D5E51DAD35C5003D1FA1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F904D5C41DAD35C5003D1FA1;
+					};
+				};
+			};
+			buildConfigurationList = F904D5C01DAD35C5003D1FA1 /* Build configuration list for PBXProject "salary-manager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F904D5BC1DAD35C5003D1FA1;
+			productRefGroup = F904D5C61DAD35C5003D1FA1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F904D6481DAE3CB2003D1FA1 /* Products */;
+					ProjectRef = F904D6471DAE3CB2003D1FA1 /* GRDB.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F904D5C41DAD35C5003D1FA1 /* salary-manager */,
+				F904D5DA1DAD35C5003D1FA1 /* salary-managerTests */,
+				F904D5E51DAD35C5003D1FA1 /* salary-managerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F904D65F1DAE3CB3003D1FA1 /* GRDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDB.framework;
+			remoteRef = F904D65E1DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6611DAE3CB3003D1FA1 /* GRDBTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBTests.xctest;
+			remoteRef = F904D6601DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6631DAE3CB3003D1FA1 /* GRDBOSXPerformanceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBOSXPerformanceTests.xctest;
+			remoteRef = F904D6621DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6651DAE3CB3003D1FA1 /* GRDBOSXCrashTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBOSXCrashTests.xctest;
+			remoteRef = F904D6641DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6671DAE3CB3003D1FA1 /* GRDBCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDBCipher.framework;
+			remoteRef = F904D6661DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6691DAE3CB3003D1FA1 /* GRDBTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBTests.xctest;
+			remoteRef = F904D6681DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D66B1DAE3CB3003D1FA1 /* GRDBCipherOSXEncryptedTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBCipherOSXEncryptedTests.xctest;
+			remoteRef = F904D66A1DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D66D1DAE3CB3003D1FA1 /* GRDBCustomSQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDBCustomSQLite.framework;
+			remoteRef = F904D66C1DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D66F1DAE3CB3003D1FA1 /* GRDBCustomSQLiteOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBCustomSQLiteOSXTests.xctest;
+			remoteRef = F904D66E1DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6711DAE3CB3003D1FA1 /* GRDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDB.framework;
+			remoteRef = F904D6701DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6731DAE3CB3003D1FA1 /* GRDBTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBTests.xctest;
+			remoteRef = F904D6721DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6751DAE3CB3003D1FA1 /* GRDBCipher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDBCipher.framework;
+			remoteRef = F904D6741DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6771DAE3CB3003D1FA1 /* GRDBTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBTests.xctest;
+			remoteRef = F904D6761DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D6791DAE3CB3003D1FA1 /* GRDBTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBTests.xctest;
+			remoteRef = F904D6781DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D67B1DAE3CB3003D1FA1 /* GRDBCustomSQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDBCustomSQLite.framework;
+			remoteRef = F904D67A1DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D67D1DAE3CB3003D1FA1 /* GRDBCustomSQLiteiOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBCustomSQLiteiOSTests.xctest;
+			remoteRef = F904D67C1DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F904D67F1DAE3CB3003D1FA1 /* GRDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDB.framework;
+			remoteRef = F904D67E1DAE3CB3003D1FA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F904D5C31DAD35C5003D1FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F966EF671DB0BFB1005876F4 /* TransactionCell.xib in Resources */,
+				F904D5D51DAD35C5003D1FA1 /* LaunchScreen.storyboard in Resources */,
+				F966EF691DB0C32C005876F4 /* salary-manager-data.db in Resources */,
+				F904D5D21DAD35C5003D1FA1 /* Assets.xcassets in Resources */,
+				F904D5D01DAD35C5003D1FA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F904D5D91DAD35C5003D1FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F904D5E41DAD35C5003D1FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F904D5C11DAD35C5003D1FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A439A41E00F94D009BEC99 /* TransactionDetailsViewController.swift in Sources */,
+				F9A439A21DFFED95009BEC99 /* TransactionCellProtocol.swift in Sources */,
+				F95666A31E0279C300C94CC5 /* TransactionsViewController.swift in Sources */,
+				F966EF661DB0BFB1005876F4 /* TransactionCell.swift in Sources */,
+				F904D5C91DAD35C5003D1FA1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F904D5D71DAD35C5003D1FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F904D5E01DAD35C5003D1FA1 /* salary_managerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F904D5E21DAD35C5003D1FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F904D5EB1DAD35C6003D1FA1 /* salary_managerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F904D5DD1DAD35C5003D1FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F904D5C41DAD35C5003D1FA1 /* salary-manager */;
+			targetProxy = F904D5DC1DAD35C5003D1FA1 /* PBXContainerItemProxy */;
+		};
+		F904D5E81DAD35C5003D1FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F904D5C41DAD35C5003D1FA1 /* salary-manager */;
+			targetProxy = F904D5E71DAD35C5003D1FA1 /* PBXContainerItemProxy */;
+		};
+		F904D6891DAE3CDC003D1FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDBOSX;
+			targetProxy = F904D6881DAE3CDC003D1FA1 /* PBXContainerItemProxy */;
+		};
+		F904D68D1DAE3CDC003D1FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDBiOS;
+			targetProxy = F904D68C1DAE3CDC003D1FA1 /* PBXContainerItemProxy */;
+		};
+		F904D6911DAE3CDC003D1FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDBWatchOS;
+			targetProxy = F904D6901DAE3CDC003D1FA1 /* PBXContainerItemProxy */;
+		};
+		F966EF601DAFC269005876F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDBiOS;
+			targetProxy = F966EF5F1DAFC269005876F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F904D5CE1DAD35C5003D1FA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F904D5CF1DAD35C5003D1FA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F904D5D31DAD35C5003D1FA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F904D5D41DAD35C5003D1FA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F904D5ED1DAD35C6003D1FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F904D5EE1DAD35C6003D1FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F904D5F01DAD35C6003D1FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MS8B32ZSAC;
+				INFOPLIST_FILE = "salary-manager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buaban.salary-manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F904D5F11DAD35C6003D1FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MS8B32ZSAC;
+				INFOPLIST_FILE = "salary-manager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buaban.salary-manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F904D5F31DAD35C6003D1FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "salary-managerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buaban.salary-managerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salary-manager.app/salary-manager";
+			};
+			name = Debug;
+		};
+		F904D5F41DAD35C6003D1FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "salary-managerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buaban.salary-managerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/salary-manager.app/salary-manager";
+			};
+			name = Release;
+		};
+		F904D5F61DAD35C6003D1FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "salary-managerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buaban.salary-managerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "salary-manager";
+			};
+			name = Debug;
+		};
+		F904D5F71DAD35C6003D1FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "salary-managerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buaban.salary-managerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "salary-manager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F904D5C01DAD35C5003D1FA1 /* Build configuration list for PBXProject "salary-manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F904D5ED1DAD35C6003D1FA1 /* Debug */,
+				F904D5EE1DAD35C6003D1FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F904D5EF1DAD35C6003D1FA1 /* Build configuration list for PBXNativeTarget "salary-manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F904D5F01DAD35C6003D1FA1 /* Debug */,
+				F904D5F11DAD35C6003D1FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F904D5F21DAD35C6003D1FA1 /* Build configuration list for PBXNativeTarget "salary-managerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F904D5F31DAD35C6003D1FA1 /* Debug */,
+				F904D5F41DAD35C6003D1FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F904D5F51DAD35C6003D1FA1 /* Build configuration list for PBXNativeTarget "salary-managerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F904D5F61DAD35C6003D1FA1 /* Debug */,
+				F904D5F71DAD35C6003D1FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F904D5BD1DAD35C5003D1FA1 /* Project object */;
+}
